@@ -26,6 +26,13 @@ ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_backup "/etc/systemd/system/$app.service"
 
 #=================================================
+# BACKUP THE MONGODB DATABASE
+#=================================================
+ynh_print_info "Backing up the MongoDB database..."
+
+ynh_mongo_dump_db --database=$app > ./dump.bson
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 
