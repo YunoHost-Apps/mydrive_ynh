@@ -8,7 +8,14 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 key=$(ynh_string_random --length=24)
+access=$(ynh_string_random --length=24)
+refresh=$(ynh_string_random --length=24)
+cookie=$(ynh_string_random --length=24)
+
 ynh_app_setting_set --key=key --value=$key
+ynh_app_setting_set --key=access --value=$access
+ynh_app_setting_set --key=refresh --value=$refresh
+ynh_app_setting_set --key=cookie --value=$cookie
 
 #=================================================
 # INSTALL DEPENDENCIES
@@ -76,7 +83,7 @@ popd
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --log_path="systemd" --wait_until="Server up and running"
+ynh_systemctl --service="$app" --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT

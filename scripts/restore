@@ -4,6 +4,14 @@ source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# LOAD SETTINGS
+#=================================================
+ynh_script_progression "Loading installation settings..."
+
+db_user=$db_name
+mongo_version=$(ynh_app_setting_get --key=mongo_version)
+
+#=================================================
 # RESTORE THE APP MAIN DIR
 #=================================================
 ynh_script_progression "Restoring the app main directory..."

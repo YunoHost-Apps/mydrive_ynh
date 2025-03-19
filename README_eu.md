@@ -18,23 +18,19 @@ EZ editatu eskuz.
 
 ## Aurreikuspena
 
-Serveur de stockage de fichiers en nuage Open Source (similaire à Google Drive). Hébergez myDrive sur votre propre serveur ou plateforme de confiance, puis accédez à myDrive via votre navigateur web. MyDrive utilise mongoDB pour stocker les métadonnées des fichiers/dossiers et prend en charge plusieurs bases de données pour stocker les morceaux de fichiers, comme Amazon S3 ou le système de fichiers.
+Open Source cloud file storage server (similar to Google Drive). Host myDrive on your own trusted server or platform, then access myDrive via your web browser. MyDrive uses mongoDB to store file/folder metadata and supports multiple databases to store file chunks, such as Amazon S3 or the File System.
 
-### Caractéristiques
+### Features
 
-- Téléchargement de fichiers
-- Téléchargement de fichiers
-- Téléchargement de dossiers
-- Téléchargement de dossiers (conversion automatique en zip)
-- Prise en charge de plusieurs bases de données (Amazon S3, système de fichiers)
-- Visionneuse de photos et de vidéos et galerie de médias
-- Vignettes de photos et de vidéos générées
-- Partage de fichiers
-- Support PWA
-- Chiffrement AES256
-- Support mobile
-- Vérification des courriels
-- JWT (jetons d'accès et de rafraîchissement)
+- File upload
+- Folder upload (automatic conversion to zip)
+- Support for multiple databases (Amazon S3, file system)
+- Photo and video viewer and media gallery
+- Generated thumbnails of photos and videos
+- File sharing
+- AES256 encryption
+- Mobile support
+- Email verification
 
 
 **Paketatutako bertsioa:** 4.0.2~ynh1
