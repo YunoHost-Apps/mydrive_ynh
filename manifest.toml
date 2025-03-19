@@ -48,7 +48,7 @@ ram.runtime = "50M"
     url = "https://github.com/subnub/myDrive/archive/refs/tags/v4.0.2.tar.gz"
     sha256 = "c11fa583648440894c995fbbeca0620d3ea984e2aacf7ae65452f0d335410933"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
