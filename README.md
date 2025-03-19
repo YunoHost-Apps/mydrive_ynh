@@ -20,8 +20,7 @@ It shall NOT be edited by hand.
 
 Open Source cloud file storage server (similar to Google Drive). Host myDrive on your own trusted server or platform, then access myDrive via your web browser. MyDrive uses mongoDB to store file/folder metadata and supports multiple databases to store file chunks, such as Amazon S3 or the File System.
 
-
-### Caractéristiques
+### Features
 
 - File upload
 - Folder upload (automatic conversion to zip)
