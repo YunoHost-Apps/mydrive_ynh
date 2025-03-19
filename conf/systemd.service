@@ -1,0 +1,16 @@
+[Unit]
+Description=MyDrive: cloud file storage server
+After=network.target
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+Environment="PATH=__PATH_WITH_NODEJS__"
+Environment="NODE_ENV=production"
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__NODEJS_DIR__/npm run start
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
