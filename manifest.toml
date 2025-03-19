@@ -5,7 +5,7 @@ packaging_format = 2
 id = "mydrive"
 name = "MyDrive"
 description.en = "Open Source cloud file storage server"
-description.fr = "Serveur de stockage de fichiers en nuage Open Source"
+description.fr = "Serveur de stockage de fichiers Open Source"
 
 version = "4.0.2~ynh1"
 
