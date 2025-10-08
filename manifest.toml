@@ -62,3 +62,6 @@ ram.runtime = "50M"
 
     [resources.apt]
     packages = "build-essential, ffmpeg"
+    
+    [resources.nodejs]
+    version = "22"

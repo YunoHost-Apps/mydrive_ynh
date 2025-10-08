@@ -23,7 +23,6 @@ ynh_systemctl --service="$app" --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Installing dependencies..."
 
-ynh_nodejs_install
 ynh_hide_warnings ynh_install_mongo
 
 #=================================================
